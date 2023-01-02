@@ -1,6 +1,6 @@
-import { Badge } from "UI/Badge";
-import { Card } from "UI/Card";
-import { Stack } from "UI/Stack";
+import Badge from "UI/Badge";
+import Card from "UI/Card";
+import Stack from "UI/Stack";
 import { clearFilter, removeFilter, selectFilters } from "./filterSlice";
 import { useSelector, useDispatch } from "react-redux";
 
@@ -33,4 +33,4 @@ const FilterPanel = () => {
 	);
 };
 
-export { FilterPanel };
+export default FilterPanel;

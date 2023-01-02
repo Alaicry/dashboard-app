@@ -1,15 +1,11 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-const Stack = ({children, pos}) => (
-  <div className='stack' style={{
-    justifyContent: pos === 'center' ? 'center' : `flex-${pos}`
-  }}>
-     {children}
-  </div>
-);
+const Stack = ({ children }) => {
+	return <div className="stack">{children}</div>;
+};
 
-export {Stack};
+export default Stack;
 
 Stack.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+	children: PropTypes.node.isRequired,
+};

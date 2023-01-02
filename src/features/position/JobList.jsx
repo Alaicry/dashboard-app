@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux";
 import { addFilter } from "features/filter/filterSlice";
 import { usePositions } from "./usePositions";
 import { useFetchPositions } from "./useFetchPositions";
-import { JobPosition } from "./JobPosition";
+import JobPosition from "./JobPosition";
 
 const JobList = () => {
 	useFetchPositions();
@@ -26,4 +26,4 @@ const JobList = () => {
 	);
 };
 
-export { JobList };
+export default JobList;

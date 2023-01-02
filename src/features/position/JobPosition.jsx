@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-import { Badge } from "UI/Badge";
-import { Card } from "UI/Card";
-import { Stack } from "UI/Stack";
+import Badge from "UI/Badge";
+import Card from "UI/Card";
+import Stack from "UI/Stack";
 
 const JobPosition = ({
 	id,
@@ -64,7 +64,7 @@ const JobPosition = ({
 	);
 };
 
-export { JobPosition };
+export default JobPosition;
 
 JobPosition.propTypes = {
 	id: PropTypes.number,
